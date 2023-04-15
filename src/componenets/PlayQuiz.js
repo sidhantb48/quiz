@@ -1,10 +1,10 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import { useLocation,useNavigate } from 'react-router-dom'
 import Button from '@mui/material/Button';
 import Card from "./common/Card"
 import {database} from "../firebase-config";
 import {addDoc,collection} from "firebase/firestore"
-import { yellow } from '@mui/material/colors';
+// import { yellow } from '@mui/material/colors';
 
 
 export default function PlayQuiz({timer}) {
@@ -23,7 +23,7 @@ export default function PlayQuiz({timer}) {
 
     
 
-    React.useEffect(() => {
+    useEffect(() => {
       const { quizData,quizCount,quizType, }=state;
       setQuestionsArray(quizData)
       setTotalQuiz(quizCount)

@@ -8,7 +8,7 @@ import {useNavigate} from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { colors } from '@mui/material';
+// import { colors } from '@mui/material';
 
 export default function Quiz() {
   const navigate=useNavigate();
@@ -115,9 +115,6 @@ export default function Quiz() {
         <Select 
         quiztype={quiztype} 
         handleChange={handleChange}
-        InputProps={{
-          style: { color: 'white' },
-        }}
          />
 
 
