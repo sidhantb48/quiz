@@ -24,7 +24,7 @@ export default function BasicSelect({
         style={{ color: 'white' }}
         id="demo-simple-select-label" 
         >
-        Quiz Category
+        Quiz Name
           
         </InputLabel>
         
