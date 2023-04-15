@@ -84,6 +84,9 @@ export default function Quiz() {
           InputLabelProps={{
             style: { color: 'white' },
           }}
+          InputProps={{
+            style: { color: 'white' },
+          }}
           
       />
 
@@ -98,6 +101,9 @@ export default function Quiz() {
           InputLabelProps={{
             style: { color: 'white' },
           }}
+          InputProps={{
+            style: { color: 'white' },
+          }}
       />    
         
 
@@ -109,6 +115,9 @@ export default function Quiz() {
         <Select 
         quiztype={quiztype} 
         handleChange={handleChange}
+        InputProps={{
+          style: { color: 'white' },
+        }}
          />
 
 

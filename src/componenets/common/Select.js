@@ -5,6 +5,9 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
+
+
+
 export default function BasicSelect({
   
   quiztype,
@@ -13,16 +16,18 @@ export default function BasicSelect({
 }) {
   
 
+
   return (
     <Box sx={{ minWidth: 220 }} style={{marginTop:20}}>
       <FormControl fullWidth>
         <InputLabel 
+        style={{ color: 'white' }}
         id="demo-simple-select-label" 
-        InputLabelProps={{
-          style: { color: 'white' },
-        }}>
-          Quiz Category
+        >
+        Quiz Category
+          
         </InputLabel>
+        
 
         <Select
           labelId="demo-simple-select-label"
@@ -30,9 +35,7 @@ export default function BasicSelect({
           value={quiztype}
           label="Quiz Category"
           onChange={handleChange}
-          InputLabelProps={{
-            style: { color: 'white' },
-          }}
+          
         >
           <MenuItem value={9} >General Knowledge</MenuItem>
           <MenuItem value={10}>Entertainment:Books</MenuItem>

@@ -19,18 +19,7 @@ export default function PlayQuiz({timer}) {
     const [playerName,setPlayerName]=useState('')
     const databaseRef=collection(database,'Leader Board')
 
-    const [timeRemaining, setTimeRemaining] = useState(3);
-
-    React.useEffect(() => {
-      const timer = setInterval(() => {
-        if(timeRemaining<=0){
-          nextQuestion();
-        }
-        setTimeRemaining(prevTime => prevTime - 1);
-      }, 1000);
-  
-      return () => clearInterval(timer); // clear timer when component unmounts
-    }, []);
+    
 
     
 
@@ -83,7 +72,6 @@ export default function PlayQuiz({timer}) {
 
         <h2>Question Number : {questionCounter}</h2>
         {/* <h3>Difficulty Level :{quizDifficulty}</h3> */}
-        <h2>Time remaining: {timeRemaining}</h2>
         
         
 
